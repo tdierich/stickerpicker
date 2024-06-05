@@ -1,0 +1,11 @@
+{
+  "homeserver_url": "https://matrix.artkolchose.de",
+  "packs": [
+    "scalar-loading_artist.json",
+    "scalar-rabbit.json",
+    "scalar-sheltie.json",
+    "scalar-stakey.json",
+    "scalar-videoplasty.json",
+    "blobhaj.json"
+  ]
+}
