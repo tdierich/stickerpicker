@@ -4,7 +4,7 @@ import {SearchBox} from "./search-box.js";
 
 const GIPHY_SEARCH_DEBOUNCE = 1000
 let GIPHY_API_KEY = "D52udT7tcOV0POeWVb4vHzv2qv4B2UtK"
-let GIPHY_MXC_PREFIX = "https://i.giphy.com/" // "mxc://giphy.mau.dev/"
+let GIPHY_MXC_PREFIX = "mxc://giphy.mau.dev/"
 
 export function giphyIsEnabled() {
 	return GIPHY_API_KEY !== ""
@@ -74,7 +74,7 @@ export class GiphySearchTab extends Component {
 				"mimetype": "image/webp",
 			},
 			"msgtype": "m.image",
-			"url": GIPHY_MXC_PREFIX + gif.id + ".webp",
+			"url": GIPHY_MXC_PREFIX + gif.id,
 
 			"id": gif.id,
 			"filename": gif.id + ".webp",
